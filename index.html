@@ -6,15 +6,22 @@
     <title>Simple HTML with JavaScript</title>
 </head>
 <body>
+  <div id="myShop">
+    <a href="https://musicmixprints.myspreadshop.com">MusicMixPrints Store!!!!</a>
+  </div>
 
-    <h1 id="greeting">Hello, World!</h1>
-    <button onclick="changeGreeting()">Click Me!</button>
+  <script>
+    var spread_shop_config = {
+        shopName: 'musicmixprints',
+        locale: 'us_US',
+        prefix: 'https://musicmixprints.myspreadshop.com',
+        baseId: 'myShop'
+    };
+  </script>
 
-    <script>
-        function changeGreeting() {
-            document.getElementById("greeting").innerHTML = "You clicked the button!";
-        }
-    </script>
-    
+  <script type="text/javascript"
+        src="https://musicmixprints.myspreadshop.com/shopfiles/shopclient/shopclient.nocache.js">
+  </script>
+
 </body>
 </html>
